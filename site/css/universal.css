@@ -1,0 +1,16 @@
+* {
+    color: white;
+}
+
+body {
+    background-image: url("./../img/background.gif");
+    background-size: cover;
+}
+
+a {
+    color: lightblue;
+}
+
+iconify-icon {
+    transform: translateY(15%);
+}

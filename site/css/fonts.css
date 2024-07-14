@@ -1,0 +1,8 @@
+.dragon-alphabet {
+    font-family: 'dragon-alphabet', sans-serif;
+}
+
+@font-face {
+    font-family: 'dragon-alphabet';
+    src: url('../../fonts/dragon-alphabet/dragon_alphabet.ttf') format('truetype');
+}
