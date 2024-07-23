@@ -2,7 +2,16 @@
     font-family: 'dragon-alphabet', sans-serif;
 }
 
+.dz-modern-font {
+    font-family: 'dovahzul-modern-font', sans-serif;
+}
+
 @font-face {
     font-family: 'dragon-alphabet';
     src: url('https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet/dragon_alphabet.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dovahzul-modern-font';
+    src: url('https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dovahzul-modern-font/DovahzulMediumFull.ttf') format('truetype');
 }
