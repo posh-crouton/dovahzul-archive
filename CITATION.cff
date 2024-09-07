@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you cite this repository, please do so as below."
+authors:
+- given-names: "posh-crouton"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Dovahzul-Archive"
+version: 1.0.0
+date-released: 2042-07-14
+url: "https://github.com/posh-crouton/dovahzul-archive"
