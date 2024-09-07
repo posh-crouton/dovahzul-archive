@@ -18,6 +18,96 @@
     <!-- import IconifyIcon web component -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+    <!-- highlight.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script defer>hljs.highlightAll();</script>
+    <style>
+        /* Dracula Theme v1.2.5
+ *
+ * https://github.com/dracula/highlightjs
+ *
+ * Copyright 2016-present, All rights reserved
+ *
+ * Code licensed under the MIT license
+ *
+ * @author Denis Ciccale <dciccale@gmail.com>
+ * @author Zeno Rocha <hi@zenorocha.com>
+ */
+
+        .hljs {
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: #282a36;
+        }
+
+        .hljs-built_in,
+        .hljs-selector-tag,
+        .hljs-section,
+        .hljs-link {
+            color: #8be9fd;
+        }
+
+        .hljs-keyword {
+            color: #ff79c6;
+        }
+
+        .hljs,
+        .hljs-subst {
+            color: #f8f8f2;
+        }
+
+        .hljs-title,
+        .hljs-attr,
+        .hljs-meta-keyword {
+            font-style: italic;
+            color: #50fa7b;
+        }
+
+        .hljs-string,
+        .hljs-meta,
+        .hljs-name,
+        .hljs-type,
+        .hljs-symbol,
+        .hljs-bullet,
+        .hljs-addition,
+        .hljs-variable,
+        .hljs-template-tag,
+        .hljs-template-variable {
+            color: #f1fa8c;
+        }
+
+        .hljs-comment,
+        .hljs-quote,
+        .hljs-deletion {
+            color: #6272a4;
+        }
+
+        .hljs-keyword,
+        .hljs-selector-tag,
+        .hljs-literal,
+        .hljs-title,
+        .hljs-section,
+        .hljs-doctag,
+        .hljs-type,
+        .hljs-name,
+        .hljs-strong {
+            font-weight: bold;
+        }
+
+        .hljs-literal,
+        .hljs-number {
+            color: #bd93f9;
+        }
+
+        .hljs-emphasis {
+            font-style: italic;
+        }
+    </style>
+
     <link rel="stylesheet" type="text/css" href="./css/universal.css" />
     <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
 </head>
@@ -100,25 +190,22 @@
 
                         <h4>On The Web</h4>
                         <p>
-                            First, you'll need to declare a font-face. You can name it whatever you want - 
-                            I chose to name it "dragon-alphabet. You can point the URL to the github repository, 
-                            or (recommended) host the file on your own CDN. If you're using a file type other 
-                            than <code>.ttf</code>, you may need to change the format from "truetype" to something else. <br />
-                            <code>
-                                @font-face {<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: 'dragon-alphabet';<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;src: url('fonts/dragon-alphabet.ttf') format('truetype');<br />
-                                }
-                            </code>
+                            First, you'll need to declare a font-face. You can name it whatever you want -
+                            I chose to name it "dragon-alphabet. You can point the URL to the github repository,
+                            or (recommended) host the file on your own CDN. If you're using a file type other
+                            than <code>.ttf</code>, you may need to change the format from "truetype" to something else.
+                            <br />
+<pre><code class="lang-css">@font-face {
+    font-family: 'dragon-alphabet';
+    src: url('fonts/dragon-alphabet.ttf') format('truetype');
+}</code></pre>
                         </p>
 
                         <p>
                             Then, you can apply your font like so: <br />
-                            <code>
-                                .dragon-alphabet {
-                                    font-family: 'dragon-alphabet', sans-serif;
-                                }
-                        </code>
+<pre><code class="lang-css">.dragon-alphabet {
+    font-family: 'dragon-alphabet', sans-serif;
+}</code></pre>
                         </p>
 
 
