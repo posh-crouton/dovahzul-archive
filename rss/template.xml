@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <title>Unslaad.org</title>
+    <description>Projected dedicated to the archival and preservation of Dovahzul, the constructed language from The Elder Scrolls</description>
+    <link>https://unslaad.org/</link>
+    <lastBuildDate>{{ lastBuildDate }}</lastBuildDate>
+    <managingEditor>Posh (p0sh@proton.me)</managingEditor>
+
+    {{ content }}
+</rss>

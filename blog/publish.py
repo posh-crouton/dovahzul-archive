@@ -30,3 +30,25 @@ with open("site-staging/index.html", "r") as fh:
 
 with open("site-staging/index.html", "w") as fh:
     fh.write(old_html.replace("{{ blogpost_hrefs }}", index).replace("{{ blogposts }}", injected_html))
+
+with open("rss/template.xml", "r") as fh:
+    rss_content = fh.read()
+
+rss_items = ""
+for file in md_files: 
+    with open(f"blog/posts/{file}", "r") as fh:
+        title = fh.readlines()[0].replace("## ", "").replace("\r\n", "").replace("\n", "")
+        link = f"https://unslaad.org/#{file.replace('.md', '')}"
+        date = file[:10]
+        content = markdown.markdown(fh.read())
+    rss_items += f"""<item>
+<title>{title}</title>
+<link>{link}</link>
+<guid>{link}</guid>
+<pubDate>{date}</pubDate>
+<description><![CDATA[{content}]]></description>
+    </item>
+    """
+
+with open("site-staging/feed.xml", "w") as fh:
+    fh.write(rss_content.replace("{{ content }}", rss_items))
