@@ -1,0 +1,291 @@
+@font-face {
+	font-family: 'EsoFontStyle';
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.eot');
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.woff2') format('woff2'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.woff') format('woff'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.ttf') format('truetype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.svg#esofontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EsoFontStyle';
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.eot');
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.woff2') format('woff2'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.woff') format('woff'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.ttf') format('truetype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.svg#esofontbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EsoFontStyleAlt';
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.eot');
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.woff2') format('woff2'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.woff') format('woff'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.ttf') format('truetype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.svg#esofontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EsoFontStyleAlt';
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.eot');
+	src: url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.woff2') format('woff2'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.woff') format('woff'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.ttf') format('truetype'),
+		url('/web/20161027220951im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.svg#esofontbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+#esovcpFooter {
+	color: #777;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+#esovcpFooter a {
+	text-decoration: none;
+	color: #6666ff;
+}
+
+#esovcpFooter a:visited {
+	text-decoration: none;
+	color: #996699;
+}
+
+.esovcpUpdateDate {
+	color: #777;
+	font-style: italic;
+}
+
+#esovcpContainer {
+	width: 100%;
+	font-family: "EsoFontStyle", "Arial", sans-serif;
+}
+
+#esovcpSkills {
+	margin-left: 460px;	
+}
+
+#esovcpDisciplines {
+	float: left;
+	width: 450px;
+}
+
+.esovcpDiscHea {
+	background-color: #ffcc88;
+}
+
+.esovcpDiscMag {
+	background-color: #aaaaff;
+}
+
+.esovcpDiscSta {
+	background-color: #bbffbb;
+}
+
+.esovcpDiscipline {
+	padding: 3px;
+	font-size: 20px;
+	font-weight: bold;
+	border: solid 4px rgba(0,0,0,0);
+	height: 50px;
+	overflow: hidden;
+	margin-left: 50px;
+}
+
+.esovcpDiscipline:hover {
+	cursor: pointer;
+	background: white;	
+}
+
+.esovcpDiscDesc {
+	margin-left: 25px;
+	font-size: 14px;
+	font-weight: normal;	
+}
+
+.esovcpDiscHighlight {
+	border: solid 4px yellow;
+}
+
+.esovcpDiscSkills {
+}
+
+.esovcpDiscSkillTitle {
+	font-size: 26px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.esovcpSkill {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 8px;
+}
+
+.esovcpSkill:hover {
+	border-radius: 15px;
+	background-color: #E3d5c0;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.7);
+}
+
+.esovcpSkillDesc {
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	margin-left: 140px;
+	padding: 4px;
+}
+
+.esovcpSkillName {
+	display: inline-block;
+}
+
+.esovcpDescWhite {
+	display: inline;
+	font-weight: bold;
+}
+
+.esovpBlockClear {
+	float: none;
+	clear: both;
+}
+
+.esovcpSkillLevel {
+	width: 100px;
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+	float: left;
+	position: relative;
+    top: -3px;	
+}
+
+.esovcpSkillControls {
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+}
+
+.esovcpPointInput {
+	width: 30px;
+	vertical-align: middle;
+	margin: 4px;
+}
+
+.esovcpMinusButton {
+	width: 21px;
+	height: 21px;
+	vertical-align: middle;
+	margin: 0;
+    padding: 0;
+}
+
+.esovcpPlusButton {
+	width: 21px;
+	height: 21px;
+	vertical-align: middle;
+	margin: 0;
+    padding: 0;
+}
+
+.esovcpDiscPoints {
+	float: right;
+}
+
+.esovcpDiscTitlePoints {
+	display: inline-block;
+	font-size: 22px;
+	font-weight: bold;
+	margin-left: 50px;	
+}
+
+.esovcpDiscAttrPoints {
+	height: 100px;
+	width: 50px;
+	float: left;
+	text-align: center;
+	padding-top: 92px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.esovcpDiscAttrGroup {
+}
+
+.esovcpTotalPoints {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	background-color: lightgray;
+}
+
+.esovcpLinkBlock {
+    float: right;
+    background-color: #FBEFD5;
+	padding-right: 20px;
+	padding-top: 2px;
+}
+
+.esovcpPassiveUnlocked {
+	color: lightgray;
+}
+
+#esovcpSearchBlock {
+	float: right;
+	background-color: #FBEFD5;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	padding: 7px;
+}
+
+#esovcpSearchBlockFloat {
+	float: right;
+	background-color: #FBEFD5;
+}
+
+.esovcpHighlightSkill {
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.7);
+}
+
+#esotvcpResetCP {
+	float: right;
+}
+
+.esotvcpResetDisc {
+	float: right;
+}
+/*
+     FILE ARCHIVED ON 22:09:51 Oct 27, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:45:29 Dec 01, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.658
+  exclusion.robots: 0.031
+  exclusion.robots.policy: 0.02
+  esindex: 0.012
+  cdx.remote: 4.953
+  LoadShardBlock: 428.388 (3)
+  PetaboxLoader3.datanode: 352.128 (6)
+  PetaboxLoader3.resolve: 72.656 (2)
+  load_resource: 38.231
+*/

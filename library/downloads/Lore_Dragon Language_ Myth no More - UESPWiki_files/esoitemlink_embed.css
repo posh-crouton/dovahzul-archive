@@ -1,0 +1,436 @@
+@font-face {
+	font-family: 'EsoFontStyle';
+	src: url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.eot');
+	src: url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.woff2') format('woff2'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.woff') format('woff'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.ttf') format('truetype'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontregular-webfont.svg#esofontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EsoFontStyle';
+	src: url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.eot');
+	src: url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.woff2') format('woff2'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.woff') format('woff'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.ttf') format('truetype'),
+		url('/web/20161027220953im_/http://esolog-static.uesp.net/resources/esofontbold-webfont.svg#esofontbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+#esoil_outeritembox{
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+#esoil_outeritembox {
+	display: inline-block;
+	padding-top: 32px;
+	vertical-align: top;
+	padding-bottom: 5px;
+}
+
+#esoil_itembox {
+	background-color: #000;
+	border: solid 3px #C5C29E;
+	border-image: url(https://web.archive.org/web/20161027220953im_/http://esoitem.uesp.net/resources/eso_item_border.png) 5 5 5 5 repeat;
+	border-width: 5px 5px 5px 5px;
+	font-family: "EsoFontStyle", "Arial", sans-serif;
+	font-size: 16px;
+	display: inline-block;
+	position: relative;
+	max-width: 400px;
+	min-width: 400px;
+	padding-bottom: 10px;
+}
+
+#esoil_itemicon {
+	display: block;
+	margin-left: 167px;
+	position: absolute;
+	top: -32px;
+	width: 64px;
+	height: 64px;
+}
+
+#esoil_itemtype1 {
+	color: #C5C29E;
+	font-weight: bold;
+	font-size: 0.9em;
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+}
+
+#esoil_itemtype2 {
+	color: #C5C29E;
+	font-weight: bold;
+	font-size: 0.9em;
+	position: absolute;
+	top: 1.7em;
+	left: 0.5em;
+}
+
+#esoil_itembindtype {
+	color: #C5C29E;
+	font-weight: bold;
+	font-size: 0.9em;
+	position: absolute;
+	right: 0.5em;
+	top: 1.7em;
+	text-align: right;
+}
+
+#esoil_itemstolen {
+	color: #C5C29E;
+	font-weight: bold;
+	font-size: 0.9em;
+	position: absolute;
+	right: 0.5em;
+	top: 0.2em;
+	text-align: right;
+}
+
+.esoil_stolenicon {
+	width: 20px;
+}
+
+#esoil_itemname {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+ 	width: 100%;
+	margin-top: 2em;
+}
+
+#esoil_datablock {
+	text-align: center;
+	white-space: nowrap;
+}
+
+#esoil_itemlevelblock {
+	text-align: center;
+}
+
+#esoil_itemleftblock {
+	text-align: center;
+}
+
+#esoil_itemrightblock {
+	text-align: center;
+}
+
+#esoil_itemlevelblock img {
+	vertical-align: middle;
+}
+
+#esoil_itemoldvalue, #esoil_itemlevel, #esoil_itemleft {
+	color: #fff;
+	display: inline;
+	font-size: 1.6em;
+	margin-left: 4px;
+}
+
+#esoil_itemleftblock, #esoil_itemrightblock, #esoil_itemlevelblock {
+	color: #C5C29E;
+	display: inline-block;
+	font-size: 0.9em;
+	font-weight: bold;
+	height: 30px;
+	width: 120px;
+	line-height: 1.6em;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#esoil_itemrightblock {
+	margin-left: 10px;
+	margin-right: 10px;	
+}
+
+#esoil_itemnewvalueblock {
+	width: 100%;
+	text-align: center;
+}
+
+#esoil_itemnewvalue {
+	font-size: 1em;
+	font-weight: normal;
+	color: white;
+	display: inline-block;
+}
+
+.esoil_cpimg {
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+}
+
+.esoil_cpimgsmall {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+}
+
+.esoil_goldimg {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+#esoil_itemdesc {
+	font-size: 0.8em;
+	color: #C5C29E;
+	margin: 10px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+#esoil_itemtags {
+	font-size: 1.0em;
+	
+	color: #ffffff;
+	margin: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#esoil_itemtags_title {
+	font-size: 0.9em;
+	color: #C5C29E;
+	margin: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#esoil_watermark {
+	position: absolute;
+	right: 2px;
+	bottom: 0px;
+	color: #555;
+	font-size: 0.8em;
+}
+
+#esoil_itemstyle {
+	position: absolute;
+	left: 10px;
+	bottom: 0px;
+	color: #C5C29E;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.esoil_quality_None {
+	color: #fff !important;
+}
+
+.esoil_quality_Normal {
+	color: #fff !important;
+}
+
+.esoil_quality_Fine {
+	color: #2DC50E !important;
+}
+
+.esoil_quality_Superior {
+	color: #3A92FF !important;
+}
+
+.esoil_quality_Epic {
+	color: #A02EF7 !important;
+}
+
+.esoil_quality_Legendary {
+	color: #EECA2A !important;
+}
+
+#esoil_item_hr {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+#esoil_itembar, #esoil_itemsetblock, #esoil_itemtraitblock, #esoil_itemenchantblock,
+#esoil_itemabilityblock, #esoil_itemtraitabilityblock, #esoil_itemcraftedblock,
+#esoil_itemdyestampblock {
+	display: block;
+	margin-top: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.4em;
+	color: #C5C29E;
+}
+
+.esoilHidden {
+	display: none !important;
+}
+
+#esoil_itemcraftedblock {
+	color: #fff;
+}
+
+#esoil_itembar {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.esoil_white
+{
+	display: inline;
+	color: white;
+}
+
+.esoil_small
+{
+	display: inline;
+	color: white;
+	font-size: 0.91em;
+}
+
+#esoil_chargebar, #esoil_conditionbar {
+	z-index: 50;
+	position: absolute;
+	left: 78px;
+	top: -8px;
+}
+
+#esoil_chargebar_coverright {
+	position: absolute;
+	right: 86px;
+	top: -7px;
+	height: 6px;
+	z-index: 100;
+}
+
+#esoil_chargebar_coverleft {
+	position: absolute;
+	left: 81px;
+	top: -7px;
+	height: 6px;
+	z-index: 100;
+}
+
+#esoil_conditionbar_coverright {
+	position: absolute;
+	right: 86px;
+	top: -7px;
+	height: 5px;
+	z-index: 100;
+}
+
+#esoil_conditionbar_coverleft {
+	position: absolute;
+	left: 81px;
+	top: -7px;
+	height: 5px;
+	z-index: 100;
+}
+
+.eso_item_link_popup {
+	position: absolute;
+	z-index: 50;
+}
+
+.eso_item_link {
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.eso_item_link_q0 { color: #888 !important; }
+.eso_item_link_q1 { color: #888 !important; }
+.eso_item_link_q2 { color: #2DC50E !important; }
+.eso_item_link_q3 { color: #3A92FF !important; }
+.eso_item_link_q4 { color: #A02EF7 !important; }
+.eso_item_link_q5 { color: #CCAA1A !important; }
+
+.esoil_itemsetdisabled {
+	color: #666 !important;
+	display: inline-block;
+}
+
+.esoil_itemdescQuest {
+	font-size: 1em !important;
+	text-align: center !important;
+	margin-top: 30px !important;
+	line-height: 1.25em !important; 
+}
+
+.esoil_nickname {
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.esoil_itemdescQuestName {
+	font-size: 0.85em !important;
+	text-align: left !important;
+	line-height: 1.1em !important;
+	margin-top: 15px;
+}
+
+.esoil_dyedesc {
+	font-size: 1.0em !important;
+	text-align: center !important;
+	color: #C5C29E;
+	padding-bottom: 10px;
+}
+
+.esoil_dyename {
+	color: white;
+	font-size: 1.0em !important;
+	text-align: left !important;
+	font-weight: bold !important;
+	margin-left: 120px;
+}
+
+.esoil_dyecolorbox {
+	background-image: url(https://web.archive.org/web/20161027220953im_/http://esoitem.uesp.net/resources/dyeStampBox.png);
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.esoil_dyecolor {
+	margin: 2px;
+	width: 20px;
+	height: 20px;
+}
+
+#esoil_itemabilityblock img {
+    position: relative;
+    top: 7px;
+}
+/*
+     FILE ARCHIVED ON 22:09:53 Oct 27, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:45:29 Dec 01, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.643
+  exclusion.robots: 0.027
+  exclusion.robots.policy: 0.016
+  esindex: 0.011
+  cdx.remote: 5.467
+  LoadShardBlock: 403.792 (3)
+  PetaboxLoader3.datanode: 265.012 (6)
+  PetaboxLoader3.resolve: 168.276 (3)
+  load_resource: 81.558
+*/

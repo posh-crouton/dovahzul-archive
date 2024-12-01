@@ -1,0 +1,1454 @@
+@font-face {
+	font-family: 'EsoFontStyle';
+	src: url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontregular-webfont.eot');
+	src: url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontregular-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontregular-webfont.woff2') format('woff2'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontregular-webfont.woff') format('woff'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontregular-webfont.ttf') format('truetype'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontregular-webfont.svg#esofontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EsoFontStyle';
+	src: url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontbold-webfont.eot');
+	src: url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontbold-webfont.eot#iefix') format('embedded-opentype'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontbold-webfont.woff2') format('woff2'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontbold-webfont.woff') format('woff'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontbold-webfont.ttf') format('truetype'),
+		url('/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/esofontbold-webfont.svg#esofontbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+#ecdBuildList {
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.ecdQuietBuildLink {
+	text-decoration: none !important;
+	font-size: 12px;
+	font-weight: normal;
+	display: inline-block;
+	color: black;
+}
+
+.ecdRawBuildData {
+	border: solid thin; 
+  	border-collapse: collapse; 
+}
+
+.ecdRawBuildData th, 
+.ecdRawBuildData td {
+	border: solid thin;
+	padding: 2px;
+}
+
+.ecdRawBuildData th,
+.ecdRawCharArrayData th {
+	font-size: 15px;
+	background-color: #f5deb3;
+}
+
+.ecdRawCharArrayData {
+	border: solid thin; 
+  	border-collapse: collapse;
+}
+
+.ecdRawCharArrayData th, 
+.ecdRawCharArrayData td {
+	border: solid thin;
+	padding: 2px;
+}
+
+.ecdRawCharHeader {
+	font-weight: bold;
+}
+
+#ecdTableOfContents {
+	float: left;
+	padding: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#ecdRoot {
+	font-family: "EsoFontStyle", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: normal;	
+	color: WHITE;
+	padding: 20px;
+	background-color: BLACK;
+	position: relative;
+    line-height: 1.25em;
+    min-width: 700px;
+}
+
+#ecdRoot img {
+	vertical-align: middle;
+}
+
+.ecdBuildName {
+	font-size: 48px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 70px;
+	padding-right: 70px;
+	color: YELLOW;
+	vertical-align: middle;
+}
+
+.ecdCharName {
+	font-size: 24px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.ecdCharDataName {
+	font-size: 32px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+    padding-left: 40px;
+    color: yellow;
+}
+
+.ecdCharDataNameTitle {
+	padding-bottom: 5px;
+}
+
+.ecdClassName {
+	font-size: 20px;
+	font-weight: bold;
+	color: #C5C29E;
+	vertical-align: top;
+    padding-top: 4px;
+}
+
+.ecdLevelInfo {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;	
+	text-align: right;
+	vertical-align: top;
+}
+
+.ecdLevel {
+	font-size: 24px;
+	display: inline-block;
+}
+
+#ecdActionBar {
+	width: 550px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.ecdActionBar1, .ecdActionBar2, .ecdActionBar3 {
+	border: solid 2px rgba(0,0,0,0);
+    padding: 2px;
+    text-align: left;
+}
+
+#ecdTitleBar {
+	text-align: center;
+}
+
+.ecdActionBar1 {
+}
+
+.ecdActionIcon {
+	display: inline-block;
+	width: 68px;
+	height: 68px;
+	background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/eso_ability_frame.png);
+	background-size: 100% 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.ecdActionIconImage {
+	width: 64px;
+	height: 64px;
+	left: 0px;
+	top: 2px;
+	position: relative;
+}
+
+
+.ecdActionBarTitle {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 10px;
+	width: 50px;
+    text-align: right;
+}
+
+.ecdTooltip {
+	display: none;
+	padding: 10px;
+    position: absolute;    
+    z-index: 1000;
+    background-color: BLACK;
+    color: WHITE;
+}
+
+.ecdSkillTooltip {
+	width: 360px;
+	background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/eso_item_border.png);
+	background-size: 100% 100%;
+	color: #C5C29E;
+	line-height: 125%;
+	text-align: left;
+    white-space: normal;
+}
+
+.ecdSkillTooltip1 {
+	width: 360px;
+	background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/eso_item_border.png);
+	background-size: 100% 100%;
+	color: #C5C29E;
+	line-height: 125%;
+	text-align: left;
+    white-space: normal;
+}
+
+.ecdSkillTooltipDivider {
+	width: 100%;
+	height: 3px;
+}
+
+.ecdSkillTooltipDesc {
+	text-align: center;
+}
+
+.ecdSkillTooltipTitle {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: WHITE;
+	padding-top: 8px;
+}
+
+.ecdWhite {
+	display: inline-block;
+	color: WHITE;
+}
+
+.ecdAttributes {
+	font-size: 20px;
+	font-weight: bold;
+	color: WHITE;
+	text-align: left;
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.ecdAttributesBox {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ecdAttributesMag {
+	font-size: 18px;
+	font-weight: normal;
+	color: #6666ff;
+}
+
+.ecdAttributesHea {
+	font-size: 18px;
+	font-weight: normal;
+	color: #ff6666;
+}
+
+.ecdAttributesSta {
+	font-size: 18px;
+	font-weight: normal;
+	color: #66ff66;
+}
+
+#ecdBasicStats {
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+    position: relative;
+	vertical-align: top;
+}
+
+.ecdStat {
+	
+}
+
+.ecdStatTitle {
+	color: #C5C29E;
+	display: inline-block; 
+}
+
+.ecdStatValue {
+	color: WHITE;
+	display: inline-block;
+	position: absolute;
+    left: 160px; 
+}
+
+#ecdEquipSlots {
+	display: inline-block;
+	position: relative;
+	width: 310px;
+	height: 630px;	
+	vertical-align: top;
+	padding-top: 8px;
+}
+
+#ecdEquipSlotTitle {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#ecdEquipSlotSubtitle1 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 5px;
+	position: relative;
+	top: -10px;
+}
+
+#ecdEquipSlotSubtitle2 {
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 350px;
+}
+
+#ecdEquipSlotSubtitle3 {
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 450px;
+}
+
+#ecdEquipSlotHead {
+	position: absolute;
+	left: 120px;
+	top: 40px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotShoulder {
+	position: absolute;
+	left: 30px;
+	top: 120px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotFigure {
+	position: absolute;
+	left: 100px;
+	top: 110px;
+	height: 220px;
+}
+
+#ecdEquipSlotChest {
+	position: absolute;
+	left: 200px;
+	top: 120px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotGlove {
+	position: absolute;
+	left: 30px;
+	top: 190px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotBelt {
+	position: absolute;
+	left: 200px;
+	top: 190px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotLeg {
+	position: absolute;
+	left: 30px;
+	top: 260px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotFeet {
+	position: absolute;
+	left: 200px;
+	top: 260px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotCostume {
+	position: absolute;
+	left: 20px;
+	top: 370px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotNeck {
+	position: absolute;
+	left: 90px;
+	top: 370px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotRing1 {
+	position: absolute;
+	left: 160px;
+	top: 370px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotRing2 {
+	position: absolute;
+	left: 230px;
+	top: 370px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdWeaponBar1 {
+	position: absolute;
+    left: 20px;
+    top: 470px;
+    height: 66px;
+    width: 216px;
+    border: solid 2px transparent;
+}
+
+#ecdEquipSlotWeapon11 {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotWeapon12 {
+	position: absolute;
+	left: 76px;
+	top: 1px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotPoison1 {
+	position: absolute;
+	left: 151px;
+	top: 1px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdWeaponBar2 {
+	position: absolute;
+    left: 20px;
+    top: 544px;
+    height: 66px;
+    width: 216px;
+    border: solid 2px transparent;
+}
+
+#ecdEquipSlotWeapon21 {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotWeapon22 {
+	position: absolute;
+	left: 76px;
+	top: 1px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotPoison2 {
+	position: absolute;
+	left: 151px;
+	top: 1px;
+	height: 64px;
+	width: 64px;
+}
+
+#ecdEquipSlotBar1 {
+	width: 370px;
+	position: relative;
+	top: -5px;
+}
+
+#ecdEquipSlotBar2 {
+	position: absolute;
+	left: 0px;
+	top: 340px;
+	width: 370px;
+}
+
+#ecdEquipSlotBar3 {
+	position: absolute;
+	left: 0px;
+	top: 440px;
+	width: 370px;
+}
+
+.eso_item_link_popup {
+	position: absolute;
+}
+	
+tr.eso_item_link {
+	font-family: "EsoFontStyle", "Arial", sans-serif;
+    font-weight: bold;
+}
+
+#ecdStatsandBuffs {
+	display: inline-block;
+	width: 266px;
+    max-height: 630px;
+}
+
+#ecdBuffs {
+    overflow-y: auto;
+    max-height: 230px;
+}
+
+.ecdScrollContent {
+	scrollbar-3dlight-color: gold;
+    scrollbar-arrow-color: #C5C29E;
+    scrollbar-base-color: #C5C29E;
+    scrollbar-darkshadow-color: #C5C29E;
+    scrollbar-face-color: #C5C29E;
+    scrollbar-highlight-color: #C5C29E;
+    scrollbar-shadow-color: #C5C29E;
+}
+
+.ecdScrollContent::-webkit-scrollbar {
+   	width: 12px;
+}
+
+.ecdScrollContent::-webkit-scrollbar-button {
+	width: 12px;
+	background: rgba(0,0,0,0);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.ecdScrollContent::-webkit-scrollbar-button:vertical:increment {    
+    border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #C5C29E;
+}
+
+.ecdScrollContent::-webkit-scrollbar-button:vertical:decrement {    
+    border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #C5C29E;
+}
+
+.ecdScrollContent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+ 
+.ecdScrollContent::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: #C5C29E; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.ecdScrollContent::-webkit-scrollbar-thumb:window-inactive {
+	background: #C5C29E; 
+}
+
+.ecdBuff {
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 3px;
+	padding-left: 0px;
+}
+
+.ecdBuff img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+
+.ecdBuffDesc {
+	display: inline-block;
+    width: 205px;
+    vertical-align: middle;
+}
+
+.ecdRightDataArea {
+	float: right;
+	display: inline-block;
+	width: 650px;
+	height: 620px;
+}
+
+#ecdSkills {
+	float: right;
+	display: inline-block;
+	width: 650px;
+	height: 620px;
+}
+
+#ecdRightData {
+	float: right;
+	display: inline-block;
+	width: 660px;
+	height: 720px;
+}
+
+#ecdRightTitleBar {
+	float: right;
+	display: inline-block;
+	width: 650px;
+}
+
+.ecdSkillTitleButton {
+	font-size: 24px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+	padding-top: 7px;
+    cursor: pointer;
+}
+
+.ecdSkillTitleButton:hover {
+	background-color: #999;
+	box-shadow: inset 0 0 20px black;
+    border-radius: 15px;
+}
+
+.ecdRightTitleButtonEnabled {
+	color: #ff9;
+	text-shadow: 2px 2px 3px black;
+	background-color: #666;
+	box-shadow: inset 0 0 20px black;
+    border-radius: 15px;
+}
+
+.ecdRightTitleButtonDisabled {
+	color: #aaa;
+	text-shadow: 2px 2px 3px black;
+}
+
+.ecdRightTitleButtonDisabled:hover {
+	color: #fff;
+	text-shadow: 2px 2px 3px #000;
+}
+
+.ecdSkillTitle {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.ecdImageFlip {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.ecdSkillSubTitle {
+	font-size: 20px;
+	font-weight: bold;
+	color: #C5C29E;
+	display: inline-block;
+}
+
+.ecdSkillSubValue {
+	font-size: 20px;
+	font-weight: bold;
+	color: WHITE;
+	display: inline-block;	
+}
+
+#ecdSkillContentTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: WHITE;
+    float: none;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#ecdSkillTree {
+	width: 190px;
+	height: 510px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.ecdSkillRank {
+	font-size: 1.4em;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+#ecdSkillContents {
+	width: 440px;
+	height: 560px;
+    display: inline-block;
+    float: right;
+    padding: 3px;
+    overflow-x: hidden;
+    margin-top: -30px;
+}
+
+.ecdSkillTree1 {
+}
+
+.ecdSkillTreeContent1 {
+	margin-left: 15px;
+}
+
+.ecdSkillTreeName1 {
+	font-size: 20px;
+    font-weight: bold;
+    color: #C5C29E;
+    padding: 8px;
+    padding-left: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.ecdSkillTreeName2 {
+	font-size: 17px;
+    font-weight: bold;
+    color: #C5C29E;
+    padding: 2px;
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+.ecdSkillTreeName1:hover,
+.ecdSkillTreeName2:hover {
+	color: WHITE;
+	background-color: #333;
+}
+
+.ecdSkillTreeNameHighlight {
+	color: WHITE;
+	background-color: #000;
+}
+
+.ecdSkillTreeNameHighlight2 {
+	color: WHITE;
+	background-color: #444;
+	border-radius: 10px;
+}
+
+.ecdSkillData {
+	height: 550px;
+    overflow-y: auto;
+}
+
+.ecdSkillIconBox {
+	width: 34px;
+	height: 34px;
+	background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/eso_ability_frame.png);
+	background-size: 100% 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ecdSkillPassiveIconBox {
+	width: 34px;
+	height: 34px;
+	background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/eso_round_ability_frame.png);
+	background-size: 100% 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ecdSkillIconBox img {
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+.ecdSkillPassiveIconBox img {
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+.ecdSkillDataBox {
+	padding: 2px;
+	padding-left: 40px;
+}
+
+.ecdSkillName {
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.ecdSkillIcon {
+	width: 32px;
+	height: 32px;
+}
+
+.ecdSkillNameDesc {
+	font-size: 14px;
+	font-weight: normal;
+	color: #C5C29E;
+	margin-left: 25px;
+	margin-bottom: 7px;
+}
+
+.ecdSkillDataHeader {
+	font-size: 20px;
+	font-weight: bold;
+	color: #C5C29E;
+	margin: 5px;
+}
+
+.ecdRawLink {
+	position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-family: "Arial" sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.ecdRawLink a {
+	color: #9999ff;
+}
+
+.ecdCreateDate {
+	position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-family: "Arial" sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.ecdSkillTreeNameCp {
+	display: inline-block;
+	font-size: 75%;
+	float: right;
+	margin-top: 3px;
+}
+
+.ecdSkillTooltipName {
+	font-size: 16px;
+	font-weight: bold;
+	color: #C5C29E;
+	margin-left: 10px;
+}
+
+.ecdSkillTooltipValue {
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+	color: WHITE;
+	margin-right: 10px;
+}
+
+#ecdBuildTable {
+	border: solid 1px gray;
+	border-spacing: 3px;
+	border-collapse: collapse;
+}
+
+#ecdBuildTable td,
+#ecdBuildTable th {
+	border: solid 1px gray;
+    padding: 3px;
+}
+
+.ecdBuildTableHeader {
+	background-color: #f5deb3;
+}
+
+.ecdBuildTableName {
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.ecdSkillNameCraft {
+	font-size: 18px;
+	font-weight: bold;
+	color: #C5C29E;
+	display: inline-block;
+    position: relative;
+    left: -10px;
+}
+
+.ecdSkillValueCraft {
+	font-size: 16px;
+	font-weight: normal;
+	color: #999;
+	display: inline;
+}
+
+.ecdActiveAbilityBar {
+	border: solid 2px yellow !important;
+	padding: 2px;
+}
+
+.ecdHiddenAbilityBar {
+	display: none;
+}
+
+#ecdTrail {
+	padding-bottom: 5px;
+}
+
+.ecdShortCharLink {
+	float: right;
+    padding-left: 20px;
+}
+
+.ecdHeader {
+	
+}
+
+.ecdTooltipTrigger {
+}
+
+tbody.ecdScrollContent {
+	display: block;
+	height: 440px;
+	overflow: auto;
+	width: 100%;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+thead.ecdFixedHeader {
+	color: #C5C29E;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+thead.ecdFixedHeader th {
+	width: 50px;
+}
+
+thead.ecdFixedHeader th:hover {
+	background-color: #777;
+	cursor: pointer;
+}
+
+thead.ecdFixedHeader th + th {
+	width: 50px;
+}
+
+thead.ecdFixedHeader th + th + th {
+	width: 400px;
+}
+
+thead.ecdFixedHeader th + th + th:hover {
+	background-color: #777;
+	cursor: pointer;
+}
+
+thead.ecdFixedHeader th + th + th + th {
+	width: 50px;
+}
+
+thead.ecdFixedHeader th + th + th + th + th {
+	width: 75px;
+	text-align: left;
+}
+
+thead.ecdFixedHeader th + th + th + th + th:hover {
+	background-color: #777;
+	cursor: pointer;
+}
+
+tbody.ecdScrollContent tr:hover {
+	background-color: #447A7E;
+}
+
+tbody.ecdScrollContent td {
+	width: 50px;
+    height: 32px;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+}
+
+tbody.ecdScrollContent td + td {
+	width: 50px;
+	text-align: right;
+	padding-right: 10px;
+	background-repeat: no-repeat;
+    background-size: 32px;
+	background-position: center;
+}
+
+tbody.ecdScrollContent td + td + td {
+	width: 400px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+tbody.ecdScrollContent td + td + td + td {
+	width: 50px;
+	text-align: left;
+}
+
+tbody.ecdScrollContent td + td + td + td + td {
+	width: 75px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+thead.ecdFixedHeader tr {
+	position: relative;
+}
+
+thead.ecdFixedHeader tr {
+	display: block;
+}
+
+.ecdItemTable {
+	border-collapse: collapse;
+	background: none;
+}
+
+.ecdItemQuality0 { color: #888 !important; }
+.ecdItemQuality1 { color: #FFF !important; }
+.ecdItemQuality2 { color: #2DC50E !important; }
+.ecdItemQuality3 { color: #3A92FF !important; }
+.ecdItemQuality4 { color: #A02EF7 !important; }
+.ecdItemQuality5 { color: #CCAA1A !important; }
+
+.ecdStolenItemIcon {
+	width: 32px;
+	text-align: center;
+	verticle-align: middle;
+}
+
+#ecdRoot table.tablesorter thead tr .header {
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+#ecdRoot table.tablesorter thead tr .headerSortUp {
+    background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/arrow_down.png);
+    background-size: 16px;
+ }
+ 
+ #ecdRoot table.tablesorter thead tr .headerSortDown {
+    background-image: url(/web/20161027220948im_/http://esobuilds-static.uesp.net/resources/arrow_up.png);
+    background-size: 16px;
+ }
+ 
+ .ecdItemFilters {
+ }
+ 
+ .ecdItemFilterTextBox {
+ 	display: inline-block;
+ }
+ 
+ .ecdItemFilterTextBox input {
+ 	width : 150px;
+  	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: white;
+	background-color: #666;
+	border: 1px solid gray;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px black;
+	padding: 2px;
+ }
+ 
+ .ecdItemFilterTextLabel {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	width: 125px;
+	text-align: right;
+    vertical-align: middle;
+ }
+ 
+ .ecdItemFilterImage {
+ 	width: 48px;
+ }
+ 
+ .ecdItemFilterContainer:hover {
+ 	opacity: 1;
+ }
+ 
+ .ecdItemFilterContainer {
+ 	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: 48px;
+ 	width: 40px;
+ 	height: 40px;
+ 	display: inline-block;
+ 	overflow: hidden;
+ 	vertical-align: middle;
+ 	opacity: 0.5;
+ 	cursor: pointer;
+ }
+ 
+ .ecdItemFilterContainer.selected {
+	opacity: 1;
+}
+
+.ecdCurrencyGold {
+	display: inline-block;
+	width: 125px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+    text-shadow: 1px 1px 2px black;
+}
+
+.ecdCurrencyAP {
+	display: inline-block;
+	width: 125px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+    text-shadow: 1px 1px 2px black;
+}
+
+.ecdCurrencyTelvar {
+	display: inline-block;
+	width: 125px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+	text-shadow: 1px 1px 2px black;
+}
+
+.ecdInventorySpace {
+	display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    float: left;	
+    text-shadow: 1px 1px 2px black;
+}
+
+.ecdInvSpaceLabel {
+	display: inline-block;
+	color: #C5C29E;
+	text-shadow: 1px 1px 2px black;
+}
+
+.ecdCurrencyAP img,
+.ecdCurrencyGold img, 
+.ecdCurrencyTelvar img {
+	width: 16px;
+}
+
+#ecdAccountCharForm {
+	display: inline-block;
+}
+
+.ecdResearchTitle {
+	font-size: 20px;
+    font-weight: bold;
+    color: #C5C29E;
+    display: block;
+    padding-top: 10px;
+}
+
+.ecdResearchBlock {
+	font-size: 16px;
+    font-weight: normal;
+    color: WHITE;
+    display: block;
+    margin-left: 40px;
+}
+
+.ecdResearchItem {
+	display: block;
+}
+
+.ecdResearchTraitItem {
+	display: block;
+	color: #999;
+    padding: 1px;
+}
+
+.ecdTraitTitle {
+	display: inline-block;
+	font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: -10px;
+}
+
+.ecdFormSubmitError {
+	background-color: #ff9999;
+	font-weight: bold;
+	display: inline-block;
+	padding: 4px;
+}
+
+.ecdPasswordLabel {
+	width: 160px;
+	text-align: right;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.ecdChangePasswordButton {
+	font-weight: bold;
+	float: right;
+	margin-left: 40px;
+}
+
+.ecdCancelPasswordButton {
+	float: right;
+}
+
+.ecdPasswordBox {
+	width: 400px;
+	background-color: #F5DEB3;
+	border: solid 1px silver;
+	padding: 10px;
+	margin-left: 50px;
+}
+
+.ecdDeleteButton {
+	font-weight: bold;
+}
+
+.ecdTraitTooltip {
+	position: relative;
+}
+
+.ecdTraitTooltip:hover {
+	background: #007;
+	cursor: pointer;
+}
+
+.ecdTraitTooltip:hover:after {
+    background: #222;
+    border-radius: 1px;
+    border: solid 1px gray;
+    top: -30px;
+    color: #f99;
+    content: attr(tooltip);
+    left: 50px;
+    padding: 3px;
+    position: absolute;
+    z-index: 98;
+    width: 300px;
+    font-size: 16px;
+    font-weight: normal;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ecdMotifTooltip:hover:after {
+	left: 50px !important;
+}
+
+.ecdBuffTooltip {
+	position: relative;
+}
+
+.ecdBuffTooltip:hover {
+	background: #007;
+}
+
+.ecdBuffTooltip:hover:after {
+    background: #222;
+    border-radius: 1px;
+    border: solid 1px gray;
+    top: 0px;
+    color: #fff;
+    content: attr(tooltip);
+    left: 34px;
+    padding: 3px;
+    position: absolute;
+    z-index: 98;
+    width: 200px;
+    font-size: 14px;
+    font-weight: normal;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ecdClickToCopy {
+	cursor: pointer;
+}
+
+.ecdClickToCopy:hover {
+	background-color: #009;
+}
+
+.ecdClickToCopyTooltip {
+	cursor: pointer;
+}
+
+.ecdClickToCopyTooltip:hover {
+	background-color: #009;
+}
+
+#ecdBuildTable form {
+	display: inline-block;
+}
+
+.ecdBuildOwned {
+	background-color: #ffff99;
+}
+
+.ecdBuildRowHover:hover {
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.ecdBuildOwned:hover {
+	background-color: #cccc55;
+}
+
+.ecdBuildTableButtons,
+.ecdBuildCreateNewRow {
+	cursor: default;
+}
+
+#ecdSearchForm {
+	display: inline-block
+}
+
+#ecdSearchText {
+}
+
+#ecdSearchButton {
+}
+
+#ecdBuildTable th {
+	padding-right: 20px;
+}
+
+#ecdMenuEditForm {
+	display: inline-block;
+	float: right;
+	position: relative;
+    top: -2px;
+    margin-right: 10px;
+}
+
+.ecdStatBarNote {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: normal;
+	font-size: 16px;
+	color: #ff9999;
+	height: 16px;
+}
+
+#ecdWeaponBar1:hover,
+#ecdWeaponBar2:hover {
+	cursor: pointer;
+	background-color: #999;
+}
+
+.ecdActionBar1:hover,
+.ecdActionBar2:hover,
+.ecdActionBar3:hover {
+	cursor: pointer;
+	background-color: #999;
+}
+
+.ecdItemOwnerWindow {
+	position: absolute;
+	width: 200px;
+	background-color: black;
+	border: solid 2px gray;
+	color: white;
+	z-index: 100;
+	padding: 5px;
+    font-size: 13px;
+}
+
+.ecdItemOwnerTitle {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffff99;
+}
+
+.ecdItemDataQnt {
+	width: 50px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.ecdItemDataName {
+	display: inline-block;
+	text-align: left;
+	width: 130px;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.ecdItemOwnerData {
+	
+}
+/*
+     FILE ARCHIVED ON 22:09:48 Oct 27, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:45:28 Dec 01, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.698
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.012
+  esindex: 0.013
+  cdx.remote: 10.126
+  LoadShardBlock: 203.494 (3)
+  PetaboxLoader3.datanode: 170.332 (6)
+  PetaboxLoader3.resolve: 211.04 (2)
+  load_resource: 184.377
+*/
