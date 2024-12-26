@@ -1,315 +1,215 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Unslaad.org: Dovahzul Archive</title>
-
-    <meta charset="UTF-8" />
-    <meta name="language" content="EN" />
-    <meta name="distribution" content="Global" />
-    <meta name="target" content="all" />
-
-    <!-- import bootstrap (https://v5.getbootstrap.com/) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- import IconifyIcon web component -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-
-    <!-- highlight.js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-    <script defer>hljs.highlightAll();</script>
-    <style>
-        /* Dracula Theme v1.2.5
- *
- * https://github.com/dracula/highlightjs
- *
- * Copyright 2016-present, All rights reserved
- *
- * Code licensed under the MIT license
- *
- * @author Denis Ciccale <dciccale@gmail.com>
- * @author Zeno Rocha <hi@zenorocha.com>
- */
-
-        .hljs {
-            display: block;
-            overflow-x: auto;
-            padding: 0.5em;
-            background: #282a36;
-        }
-
-        .hljs-built_in,
-        .hljs-selector-tag,
-        .hljs-section,
-        .hljs-link {
-            color: #8be9fd;
-        }
-
-        .hljs-keyword {
-            color: #ff79c6;
-        }
-
-        .hljs,
-        .hljs-subst {
-            color: #f8f8f2;
-        }
-
-        .hljs-title,
-        .hljs-attr,
-        .hljs-meta-keyword {
-            font-style: italic;
-            color: #50fa7b;
-        }
-
-        .hljs-string,
-        .hljs-meta,
-        .hljs-name,
-        .hljs-type,
-        .hljs-symbol,
-        .hljs-bullet,
-        .hljs-addition,
-        .hljs-variable,
-        .hljs-template-tag,
-        .hljs-template-variable {
-            color: #f1fa8c;
-        }
-
-        .hljs-comment,
-        .hljs-quote,
-        .hljs-deletion {
-            color: #6272a4;
-        }
-
-        .hljs-keyword,
-        .hljs-selector-tag,
-        .hljs-literal,
-        .hljs-title,
-        .hljs-section,
-        .hljs-doctag,
-        .hljs-type,
-        .hljs-name,
-        .hljs-strong {
-            font-weight: bold;
-        }
-
-        .hljs-literal,
-        .hljs-number {
-            color: #bd93f9;
-        }
-
-        .hljs-emphasis {
-            font-style: italic;
-        }
-    </style>
-
-    <link rel="stylesheet" type="text/css" href="./css/universal.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/universal.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 
-<body style="height: 100svh; overflow-y: clip;">
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-3 mx-3">
-                <div class="row p-4" style="background-color: #303446;">
+<body>
+    <div class="container mt-5">
+        <div class="row gx-5">
+            <div class="col-lg-2 col-md-3">
+                
+            </div>
+            <div class="col">
+                <h1>Fonts</h1>
+                <a href="#font-files-header">Just the downloads, please</a>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-lg-2 col-md-3">
+                <hr class="my-4">
+                <ul class="list-unstyled">
+                    <li><a role="button" class="btn btn-lg btn-link" href="https://unslaad.org">Home</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <hr class="my-4">
 
-                    <div class="jumbotron">
-                        <h1 class="display-4">Unslaad.org</h1>
-                        <p class="lead">Inspired by thuum.org</p>
-                        <hr class="my-4">
-                        <p>
-                            Project dedicated to the archival of resources relating to the dragon
-                            language featured in <i>The Elder Scrolls V: Skyrim</i> and assorted other
-                            games in the franchise.
-                        </p>
-                    </div>
-                </div>
-                <div class="row my-3 p-4" style="background-color: #303446;">
+                <p>
+                    Many fonts are available for Dovahzul, including one ripped from <i>The Elder Scrolls V: Skyrim</i>
+                    and several created by the community.
+                </p>
+
+                <p>
+                    Due to Dovahzul's alphabet having more characters than the Latin alphabet, there are 2 widely used
+                    methods to allow the extra characters to be written. The scheme used in Skyrim is to map extra
+                    characters to the arabic numerals 1-9 (with an extra mysterious character mapped to 0), while
+                    other fonts choose to reserve 0-9 for non-canon numeral runes and map the extra alphabetical glyphs
+                    to capital forms of other letters.
+                </p>
+
+                <div class="alert alert-info" role="alert">
                     <p>
-                        <a href="https://unslaad.org/">Back to Home</a>
+                        Unfortunately, it's not possible to type Dovahzul runes everywhere.
+                        Dovahzul runes do not have their own unicode points like other world alphabets do,
+                        so the best you can do is apply a font to your own system or website.
+                    </p>
+                    <p>
+                        For this reason, there are no "Dovahzul keyboard" apps, since a keyboard can't control the font
+                        of the text field it's writing in.
                     </p>
                 </div>
-            </div>
-            <div class="col mx-3">
 
-                <div style="overflow-y: scroll; overflow-x: hidden; max-height: 90vh;">
-                    <div class="row p-4 mb-2" style="background-color: #303446;">
-                        <h2>
-                            Fonts
-                            <span class="text-secondary">2024-07-20</span>
-                        </h2>
-                        <hr class="mt-3">
+                <hr class="mb-5" />
+                <h2>Installing Fonts</h2>
 
-                        <p>
-                            Here, you can download font files so you can use Dovahzul runes on your own
-                            device or project.
-                        </p>
+                <p>
+                    If you want to use these fonts on your own device or a website or app you're building, but you
+                    aren't familiar with how fonts work, this quick guide will help you get started.
+                </p>
 
-                        <h3>Installation</h3>
-                        <p>
-                            If you want to use these fonts on your own device or in your own project, but aren't familar
-                            with fonts work, here's a guide on how to get it set up!
-                        </p>
+                <h3 class="mt-2" class="mt-5">Windows</h3>
+                <div class="row">
+                    <p class="col">
+                        Find a font file in the file explorer, right-click, and click "Install".
+                        The font should appear in font lists (though you may need to restart some apps or
+                        your whole computer).
+                    </p>
+                    <img class="col" src="https://unslaad.org/img/fonts/windows_installation.png"
+                        alt="Context menu of a .ttf file on Windows 11">
+                </div>
 
-                        <h4>Windows</h4>
-                        <div class="row">
-                            <div class="col-6">
-                                <p>
-                                    Find a font file in your file explorer, right-click, and click "Install".
-                                    The font should now appear in font lists. You may need to restart some
-                                    applications or your whole computer.
-                                </p>
-                                <p>
-                                    This guide is for windows 11. Steps may differ for other major versions
-                                    of Windows.
-                                </p>
-                            </div>
-                            <img class="col-6" src="img/fonts/windows_installation.png" style="max-width: 50%;" />
-                        </div>
+                <h3 class="mt-2" class="mt-5">MacOS</h3>
+                <p>
+                    No guide exists here. If you know how to install a font on MacOS (ideally with screenshots),
+                    consider contributing to this page!
+                </p>
 
-                        <h4>Linux</h4>
-                        <p>
-                            To install for all users, copy font files into
-                            <code>/usr/local/share/fonts</code>. You can put them in
-                            directories within this directory for organisational purposes.
-                        </p>
-                        <p>
-                            To install for just yourself, copy files into
-                            <code>~/.local/share/fonts</code>.
-                        </p>
-                        <div class="alert alert-warning" role="alert">
-                            It's generally a bad idea to install fonts to <code>/usr/share/fonts</code>.
-                            This directory is usually handled by your system's package manager, so
-                            you shouldn't try to change it manually.
-                        </div>
+                <h3 class="mt-2" class="mt-5">Linux</h3>
+                <p>
+                    To install for all users, copy the font file(s) into <code>/usr/local/share/fonts</code>.
+                    Within this directory, you may choose to organise font files into sub-folders for organisation.
+                </p>
+                <p>
+                    To install for just yourself, copy the file(s) into <code>~/.local/share/fonts</code>.
+                </p>
 
-                        <h4>On The Web</h4>
-                        <p>
-                            First, you'll need to declare a font-face. You can name it whatever you want -
-                            I chose to name it "dragon-alphabet. You can point the URL to the github repository,
-                            or (recommended) host the file on your own CDN. If you're using a file type other
-                            than <code>.ttf</code>, you may need to change the format from "truetype" to something else.
-                            <br />
-<pre><code class="lang-css">@font-face {
+                <div class="alert alert-warning" role="alert">
+                    It's generally a bad idea to install fonts to <code>/usr/share/fonts</code>.
+                    This directory is usually handled by the system's package manager, so users shouldn't
+                    change it manually.
+                </div>
+
+                <h3 class="mt-2" class="mt-5">On The Web</h3>
+                <p>
+                    First, you'll need to declare a font-face. You can name it whatever you want.
+                    You may set the URL to <a
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet/dragon_alphabet.ttf">the
+                        content file on this GitHub repo</a>, but be advised that this file may move at any time without
+                    notice.
+                    The recommended solution is to host the file(s) on your own CDN.
+                </p>
+
+                <pre><code class="lang-css">@font-face {
     font-family: 'dragon-alphabet';
     src: url('fonts/dragon-alphabet.ttf') format('truetype');
 }</code></pre>
-                        </p>
 
-                        <p>
-                            Then, you can apply your font like so: <br />
-<pre><code class="lang-css">.dragon-alphabet {
+                Once you've declared the font-face, you can apply the font to any element with a
+                <code>font-family</code>
+                property:
+
+                <pre><code class="lang-css">.dragon-alphabet {
     font-family: 'dragon-alphabet', sans-serif;
 }</code></pre>
-                        </p>
 
+                <h2 class="mt-5" id="font-files-header">Font File Downloads</h2>
 
-                        <h4></h4>
+                <b><u>Calligraphy Dragon Runes</u></b>
+                <p>
+                    Shared by thuum.org user hiith on the forum's library, the Calligraphy Dragon Runes font
+                    is available in medium
+                    <a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/calligraphy-dragon-runes/CalligraphyDragonRunes%20Medi.tff">
+                        here</a>.
+                </p>
 
-                        <hr class="mt-3" />
+                <b><u>Comic Dragon Runes</u></b>
+                <p>
+                    Released under the <a href="https://openfontlicense.org/">SIL Open Font License</a>, Comic Dragon
+                    Runes
+                    is inspired by the infamous comic sans font. Available in
+                    <a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/ComicDragonRunes_Medium.ttf">
+                        medium</a>,
 
-                        <h3>Alternative Dragon Rune Fonts</h3>
-                        <p>
-                            We're still looking for this font. If you think you have a copy, get in touch!
-                        </p>
+                    <a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/ComicDragonRunesBold.ttf">
+                        bold</a>,
 
-                        <h3>Calligraphy Dragon Runes</h3>
-                        <ul class="mx-3">
-                            <li><a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/calligraphy-dragon-runes/CalligraphyDragonRunes%20Medi.tff">
-                                    CalligraphyDragonRunes Medi.tff
-                                </a></li>
-                        </ul>
+                    and with two (<a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/.DS_Store">
+                        one</a>|<a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/__MACOSX/ComicDragonRunes/._.DS_Store">
+                        two</a>) .DS_Store fonts for MacOS (formerly OSX).
+                </p>
 
-                        <h3>Comic Dragon Runes</h3>
-                        <ul class="mx-3">
-                            <li>
-                                <a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/.DS_Store">
-                                    .DS_Store
-                                </a>
-                            </li>
-                            <li>
-                                <a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/ComicDragonRunesBold.ttf">
-                                    ComicDragonRunesBold.ttf
-                                </a>
-                            </li>
-                            <li>
-                                <a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/ComicDragonRunes_Medium.ttf">
-                                    ComicDragonRunes_Medium.ttf
-                                </a>
-                            </li>
-                            <li>
-                                <a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/ComicDragonRunes/__MACOSX/ComicDragonRunes/._.DS_Store">
-                                    __MACOSX/ComicDragonRunes/._.DS_Store
-                                </a>
-                            </li>
-                        </ul>
+                <b><u>Dragon Alphabet</u></b>
 
-                        <h3>Dovahzul Modern Font</h3>
-                        <p>
-                            We're still looking for this font. If you think you have a copy, get in touch!
-                        </p>
+                <p>
+                    Ripped directory from the files of <i>The Elder Scrolls V: Skyrim</i>, the
+                    <a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet/dragon_alphabet.ttf">
+                        Dragon Alphabet</a> font comes directly from the word walls of Skyrim.
+                </p>
+                <p>
+                    From thuum.org: "The Dragon Alphabet font has all 34 runes mapped to both the upper and lower cases.
+                    Special characters are mapped on the numbers 0-9. This is the font that is used
+                    throughout the site. It also features punctation such as periods, commas,
+                    question marks, and exclamation points."
+                </p>
+                <p>
+                    Interestingly, this font contains an unused glyph mapped to the "0" key.
+                    The meaning of this rune has been the subject of some speculation and debate.
+                </p>
+                <p>
+                    <img style="max-width: 50%;"
+                        src="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/assets/fonts/dragon-alphabet/layout.png"
+                        alt="keyboard layout for the Dragon Alphabet font" />
+                </p>
 
-                        <h3>Dragon Alphabet</h3>
-                        <p>
-                            From thuum.org: <br />
-                            <img style="max-width: 50%;"
-                                src="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/assets/fonts/dragon-alphabet/layout.png" />
-                        <blockquote>
-                            The Dragon Alphabet font has all 34 runes mapped to both the upper and lower cases.
-                            Special characters are mapped on the numbers 0-9. This is the font that is used
-                            throughout the site. It also features punctation such as periods, commas,
-                            question marks, and exclamation points.
-                        </blockquote>
-                        </p>
-                        <ul class="mx-3">
-                            <li>
-                                <a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet/dragon_alphabet.ttf">
-                                    dragon_alphabet.ttf
-                                </a>
-                            </li>
-                        </ul>
+                <b><u>Dragon Alphabet - Numbered</u></b>
+                <p>
+                    From thuum.org: "The Numbered Dragon Alphabet font has all of the letters and punctuation the
+                    previous font has, in addition to runes for numbers. Special characters have been moved from the
+                    number keys to uppercase keys. Special thanks to RegalDragon for putting the number runes and font
+                    together!"
+                </p>
+                <p>
+                    The <a download
+                        href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet-numbered/dragon_alphabet_numbered.ttf">
+                        Dragon Alphabet - Numbered</a> font is similar to the aforementioned font ripped from the game,
+                    though it
+                    also includes non-canon runes for numbers 0 through 9. The extra 9 runes are mapped to capital forms
+                    of other letters,
+                    with the rune keyed to "0" being omitted entirely.
+                </p>
+                <p>
+                    <img style="max-width: 50%;"
+                        src="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/assets/fonts/dragon-alphabet-numbered/layout.png" />
+                    <img style="max-width: 50%;"
+                        src="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/assets/fonts/dragon-alphabet-numbered/layout-shifted.png" />
+                </p>
 
-                        <h3>Dragon Alphabet - Numbered</h3>
-                        <p>
-                            From thuum.org: <br />
-                            <img style="max-width: 50%;"
-                                src="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/assets/fonts/dragon-alphabet-numbered/layout.png" />
-                            <img style="max-width: 50%;"
-                                src="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/assets/fonts/dragon-alphabet-numbered/layout-shifted.png" />
-                        <blockquote>
-                            The Numbered Dragon Alphabet font has all of the letters and punctuation the previous font
-                            has,
-                            in addition to runes for numbers. Special characters have been moved from the number keys
-                            to uppercase keys. Special thanks to RegalDragon for putting the number runes and font
-                            together!
-                        </blockquote>
-                        </p>
-                        <ul class="mx-3">
-                            <li>
-                                <a download
-                                    href="https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet-numbered/dragon_alphabet_numbered.ttf">
-                                    dragon_alphabet.ttf
-                                </a>
-                            </li>
-                        </ul>
-
-                        <h3>Simple Dragon Runes</h3>
-                        <p>
-                            We're still looking for this font. If you think you have a copy, get in touch!
-                        </p>
-                    </div>
-                </div>
+                <b><u>Wanted</u></b>
+                <p>
+                    Unslaad.org is aware of some extra fonts, but has been unable to retrieve copies.
+                    If you think you might have a copy, please get in touch via email or make a pull request
+                    on our GitHub repo.
+                </p>
+                <ul>
+                    <li>Simple Dragon Runes</li>
+                    <li>Dovahzul Modern Font</li>
+                    <li>Alternative Dragon Rune Fonts</li>
+                </ul>
             </div>
         </div>
     </div>

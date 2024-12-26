@@ -31,24 +31,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11' 
-
-      - name: Install dependencies
-        run: |
-          if [ -f blog/requirements.txt ]; then pip install -r blog/requirements.txt; fi
-
-      - name: Run publish script
-        run: python blog/publish.py
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './site-staging'
+          path: './site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

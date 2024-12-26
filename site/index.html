@@ -1,69 +1,58 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Unslaad.org: Dovahzul Archive</title>
-
-    <meta charset="UTF-8" />
-    <meta name="language" content="EN" />
-    <meta name="distribution" content="Global" />
-    <meta name="target" content="all" />
-
-    <!-- import bootstrap (https://v5.getbootstrap.com/) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- import IconifyIcon web component -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./css/universal.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/universal.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 
-<body style="height: 100svh; overflow-y: clip;">
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-3 mx-3">
-                <div class="row p-4" style="background-color: #303446;">
+<body>
+    <div class="container mt-5">
+        <div class="row gx-5">
+            <div class="col-lg-2 col-md-3">
 
-                    <div class="jumbotron">
-                        <h1 class="display-4">Unslaad.org</h1>
-                        <p class="lead">Inspired by thuum.org</p>
-                        <hr class="my-4">
-                        <p>
-                            Project dedicated to the archival of resources relating to the dragon
-                            language featured in <i>The Elder Scrolls V: Skyrim</i> and assorted other
-                            games in the franchise.
-                        </p>
-                    </div>
-                </div>
-                <div class="row my-3 p-4" style="background-color: #303446;">
-                    <ul style="list-style-type: none;">
-                        <li><a href="./library.html">Library</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="https://github.com/posh-crouton/dovahzul-archive">Repository</a></li>
-                        <li><a href="./communities.html">Communities</a></li>
-                        <li><a href="./fonts.html">Fonts</a></li>
-                    </ul>
-                    <hr />
-                    <h2>Blogposts</h2>
-                    <ul style="list-style-type: none;">
-                        {{ blogpost_hrefs }}
-                    </ul>
-                </div>
             </div>
-            <div class="col mx-3">
-
-                <div style="overflow-y: scroll; overflow-x: hidden; max-height: 90vh;">
-
-                    {{ blogposts }}
-
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">
+                        <span class="dragon-alphabet">unsl1d.org</span> 
+                        <span class="text-secondary">unslaad.org</span>
+                    </h1>
                 </div>
             </div>
         </div>
+        <div class="row gx-5">
+            <div class="col-lg-2 col-md-3">
+                <hr class="my-4">
+                <ul class="list-unstyled">
+                    <li><a role="button" class="btn btn-lg btn-link" href="/">Home</a></li>
+                    <li><a role="button" class="btn btn-lg btn-link" href="./library.html">Library</a></li>
+                    <li><a role="button" class="btn btn-lg btn-link" href="./communities.html">Communities</a></li>
+                    <li><a role="button" class="btn btn-lg btn-link" href="./fonts.html">Fonts</a></li>
+                    <li><a role="button" class="btn btn-lg btn-link"
+                            href="https://github.com/posh-crouton/dovahzul-archive">Repository</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <hr class="my-4">
+                <p class="lead">
+                    Inspired by <a href="https://thuum.org">thuum.org</a>, unslaad.org is a project dedicated
+                    to the archival of the fictional dragon language from <i>The Elder Scrolls V: Skyrim</i> and
+                    other titles.
+                </p>
+            </div>
+        </div>
     </div>
+
+    <footer class="p-3" style="background-color: #2c2c2c; position:fixed; bottom:0; height:auto; width:100%; text-align:center">
+        Something wrong? File an issue on our <a href="https://github.com/posh-crouton/dovahzul-archive">GitHub</a>.
+    </footer>
 </body>
 
 </html>
