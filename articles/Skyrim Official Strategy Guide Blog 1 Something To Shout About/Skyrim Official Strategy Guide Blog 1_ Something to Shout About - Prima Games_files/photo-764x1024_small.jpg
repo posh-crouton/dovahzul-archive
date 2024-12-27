@@ -1,0 +1,12 @@
+<html>
+<head>
+											<script>
+												window.gg_cfproxy_active_features = window.gg_cfproxy_active_features || [];
+												window.gg_cfproxy_active_features = [{"name":"article-assistant","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"article-assistant-desktop-location","value":"postarticle","on":true,"off":false,"source":"defaultValue","ruleId":""},{"name":"updated-homepage","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"latest-page","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"latest-page-with-updated-homepage","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"gamurs-network-account","value":true,"on":true,"off":false,"source":"force","ruleId":""},{"name":"commenting-experience","value":true,"on":true,"off":false,"source":"force","ruleId":""},{"name":"connatix-player","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"finite-article-experience","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"custom-article-tile-image-sizes","value":true,"on":true,"off":false,"source":"force","ruleId":""},{"name":"trending-bar","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"disable-htl","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"disable-primis","value":false,"on":false,"off":true,"source":"defaultValue","ruleId":""},{"name":"recirculation-provider","value":"internal","on":true,"off":false,"source":"defaultValue","ruleId":""},{"name":"content-ad-injection-character-count","value":400,"on":true,"off":false,"source":"defaultValue","ruleId":""}];
+											</script>
+										<title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'gamurs_icon_library';
+  src: url('./font/gamurs_icon_library.eot?90689508');
+  src: url('./font/gamurs_icon_library.eot?90689508#iefix') format('embedded-opentype'),
+       url('./font/gamurs_icon_library.woff2?90689508') format('woff2'),
+       url('./font/gamurs_icon_library.woff?90689508') format('woff'),
+       url('./font/gamurs_icon_library.ttf?90689508') format('truetype'),
+       url('./font/gamurs_icon_library.svg?90689508#gamurs_icon_library') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'gamurs_icon_library';
+    src: url('../font/gamurs_icon_library.svg?90689508#gamurs_icon_library') format('svg');
+  }
+}
