@@ -2,7 +2,35 @@
     font-family: 'dragon-alphabet', sans-serif;
 }
 
+.dragon-alphabet-numbered {
+    font-family: 'dragon-alphabet-numbered', sans-serif;
+}
+
+.comic-dragon-runes {
+    font-family: 'comic-dragon-runes', sans-serif;
+}
+
+.calligraphy-dragon-runes 
+{
+    font-family: 'calligraphy-dragon-runes', sans-serif;
+}
+
 @font-face {
     font-family: 'dragon-alphabet';
     src: url('https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet/dragon_alphabet.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dragon-alphabet-numbered';
+    src: url('https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/dragon-alphabet-numbered/dragon_alphabet_numbered.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'comic-dragon-runes'; 
+    src: url('https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/comicdragonrunes/ComicDragonRunes/ComicDragonRunes_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'calligraphy-dragon-runes'; 
+    src: url('https://raw.githubusercontent.com/posh-crouton/dovahzul-archive/main/fonts/calligraphy-dragon-runes/CalligraphyDragonRunes_Medi.ttf') format('truetype');
 }
