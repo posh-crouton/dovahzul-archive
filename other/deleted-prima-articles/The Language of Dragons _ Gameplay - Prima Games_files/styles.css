@@ -1,0 +1,884 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#fancybox-content {
+	border: none !important;
+	border-width: 0px !important;
+}
+
+#fancybox-outer {
+	background: transparent !important;
+}
+
+
+#fancybox-wrap {
+	background: transparent !important;
+}
+
+#login_lightbox, #register_lightbox, #age_check_lightbox, #cart_lightbox, #terms_lightbox, #report_lightbox, #reset_lightbox, #offsitefeature_lightbox {
+	display: none;
+}
+
+
+table.generic {
+	margin:10px 0;
+	border-top:1px solid #434343;
+	border-left:1px solid #434343;
+}
+table.generic th {
+	background:#393939;
+	text-align:center;
+	padding:14px 0px 10px 10px;
+	width:100px;
+	font-size:13px;
+}
+
+table.generic td {
+	background:#393939;
+	text-align:center;
+	padding:4px 10px 4px 10px;
+	font-size:12px;
+}
+
+table.generic td p{
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+}
+
+table.generic .odd td {
+	background:#424242;
+}
+table.generic td.left_border, table.generic th.left_border {
+	border-left:1px solid #343434;
+}
+
+.table_lightbox table.generic { width:100%; margin:10px 0 0; }
+table.generic th { width:auto; }
+.scroll_table {
+	max-height:300px;
+	overflow-y:auto;
+	padding:0 10px 0 0;
+}
+
+
+.slide {
+	width: 612px;
+	height: 362px;
+}
+
+
+
+#heronav {
+	padding:6px 4px 6px 0;
+	float:right;
+	display:block;
+}
+#heronav a {
+	float:left;
+	margin-left:2px;
+	display: block;
+}
+#heronav a.activeSlide { background:#c51218; }
+#heronav a:hover { background:#706a7b; }
+#heronav a { color:#bababa; background:#514653; padding:2px; }
+#heronav a.activeSlide { color:#ffffff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#lightbox #cartbox .terms_body {
+	background:#363535;
+	margin:10px 0;
+}
+#lightbox #cartbox .terms_body .wrap {
+	padding:10px; 
+	position:relative;
+}
+#lightbox #cartbox .terms_body .wrap .cart_delete {
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:80px;
+	text-align:center;
+	color:#fff;
+	background:#f12416;
+	padding:4px 0;
+	font-size:12px;
+}
+#lightbox #cartbox .terms_body .cart_image {
+	width:113px;
+	float:left;
+}
+#lightbox #cartbox .terms_body .cart_image img { border:1px solid #141414; }
+#lightbox #cartbox .terms_body .cart_description {
+	width:422px;
+	float:left;
+	margin-left:10px;
+	width: 620px;
+	height: 400px;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#lightbox #cartbox .terms_body .cart_description h4 {
+	font-size:20px;
+}
+#lightbox #cartbox .terms_body .cart_description p {
+	font-size:14px;
+}
+#lightbox #cartbox .terms_body .cart_price {
+	width:90px;
+	float:right;
+}
+#lightbox #cartbox .terms_body .cart_price p {
+	text-align:right;
+	font-size:16px;
+}
+
+
+
+
+/* Badgeville styling */
+
+.bv_whatIsThis {
+	display: none !important;
+}
+
+.bv_multiTab {
+	width: 375px;
+}
+
+.bv_widget span, .bv_widget div, .bv_widget p, .bv_widget li {
+	color: #fff !important;
+}
+
+.my_badges .bv_image_medium_url {
+	width: 62px;
+	height: 58px;
+	margin: 4px 0 4px 4px;
+}
+
+.my_badges_sidebar .bv_image_medium_url {
+	width: 56px !important;
+}	
+
+.bv_roundedCorners_top_left, .bv_roundedCorners_top_right {
+	border-radius: 0px !important;
+}
+
+.bv_primaryBackground {
+	background: none repeat scroll 0 0 #363535 !important;
+}
+
+.bv_borderHeader .bv_title {
+	color: #fff !important;
+}
+
+.bv_mainBackground {
+	background: none repeat scroll 0 0 #252525 !important;
+}
+
+.bv_secondaryBackground {
+	background: none repeat scroll 0 0 #2D2D2D !important;
+}
+
+#bv_topFans {
+	text-transform: uppercase;
+}
+
+#bv_myRewards {
+	text-transform: uppercase;
+}
+
+#bv_myRewards .bv_mainBackground, #bv_topFans .bv_mainBackground {
+	color: #FFFFFF !important;
+	font-weight: normal;
+}
+
+#bv_myRewards .bv_secondaryBackground, #bv_topFans .bv_secondaryBackground {
+	color: #666666 !important;
+	font-weight: normal;
+}
+
+.bv_highlightBackground, .bv_hoverable:hover {
+	background: none repeat scroll 0 0 #666666 !important;
+}
+
+.bv_roundedCorners_bottom {
+	border-radius: 0px;
+}
+
+.bv_settingsTab {
+	display: none;
+}
+
+.bv_howTo {
+	display: none;
+}
+
+#community_carousel {
+	height: 200px;
+}
+
+
+
+
+.highlight_pagination {
+	background:#2e2e2e;
+	padding:12px 4px 12px 0;
+	height:40px;
+}
+.highlight_pagination li {
+	float:right;
+	margin-left:2px;
+}
+.highlight_pagination li a {
+	background:#5b5b5b;
+	color:#bababa;
+	padding:2px;
+}
+.highlight_pagination li a:hover { background:#7a7a7a; text-decoration:none; }
+.highlight_pagination li.current a, #highlight_pagination li.current a:hover {
+	color:#fff;
+	background:#c51218;
+	text-decoration:none;
+}
+
+
+div.icon {
+    background-image: url("/web/20140322235839im_/http://www.primagames.com/media/forum/themes/IPB/img/f_norm.gif");
+    display: block;
+    float: left;
+    height: 15px;
+    width: 19px;
+}
+
+
+body .blocktable h2, h2#category_head_1, h2#category_head_2, h2#category_head_3, h2#category_head_4, h2#category_head_5, h2#category_head_6, h2#category_head_7, h2#category_head_8, h2#category_head_9, h2#category_head_10, body .djangobb H2, body DIV.blockpost H2 {
+    background: none repeat scroll 0 0 #333333;
+    border-color: #D3191E -moz-use-text-color #141414;
+    border-style: solid none;
+    border-width: 5px medium 1px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 30px 0 0;
+    padding: 8px 12px;
+}
+
+
+
+
+
+.standard_content .guide_left {
+	width: 685px;
+}
+
+
+
+.shop_item_wrap h2 {
+	width: 335px;
+}
+
+
+/* Tablesorter */
+
+th.header.headerSortDown {
+	background: #cccccc url(/web/20140322235839im_/http://www.primagames.com/media/images/tablehead_desc.gif) no-repeat right center !important;
+	color: #333333;
+}
+
+th.header.headerSortUp {
+	background: #cccccc url(/web/20140322235839im_/http://www.primagames.com/media/images/tablehead_asc.gif) no-repeat right center !important;
+	color: #333333;
+}
+
+th.header.headerSortUp p, th.header.headerSortDown p, th.header.headerSortUp strong, th.header.headerSortDown strong {
+	color: #333333;
+}
+
+
+
+th.header {
+	background: #666666 url(/web/20140322235839im_/http://www.primagames.com/media/images/tablehead_bg.gif) no-repeat right center !important;
+	padding-right: 25px !important;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+th.header p {
+	margin-bottom: 0px;
+}
+
+.tablesorter_enlarge img {
+	float: none !important;
+	display: inline;
+}
+
+#tablesorter_overlay {
+	width: 100%;
+	height: 100%;
+	background: #252525;
+	z-index: 9999;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.tablesorter_overlay_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 99999;
+}
+
+.tablesorter_overlay_close a {
+	color: #fff;
+	font-size: 25px;
+}
+
+
+#search_guide {
+	width:347px;
+	height:33px;
+	background:#fff url(/web/20140322235839im_/http://www.primagames.com/media/images/icon_search.gif) 8px center no-repeat;
+	border:1px solid #000;
+	float: right;
+}
+#search_guide input {
+	font-size:15px;
+	color:#a2a2a2;
+	width:280px;
+	margin:6px auto;
+	display:block;
+	border:none;
+	border-color: transparent;
+}
+
+.guide_search_item {
+	background: #424242;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.guide_search_item a {
+	text-decoration: underline;
+}
+
+.floatleft {
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+	#janrain-facebook div, #janrain-google, #janrain-twitter, #janrain-yahoo, #janrain-aol, #janrain-live_id {  
+	color: #000 !important;  
+	}
+	
+.topclass{
+	top: viewport_offsety;
+}
+
+.images-no-float img {
+	float: none;
+}
+
+img.keypress, img.inline {
+	float: none;
+	margin: 0 2px 0 2px;
+}
+
+.eguide-halo-4-eguide a:link, .eguide-halo-4-eguide a:visited, .eguide-halo-4-eguide a:active {
+	text-decoration: underline;
+}
+
+.eguide-halo-4-eguide a:hover {
+	text-decoration: none;
+}
+
+.eguide-halo-4-eguide h1 {
+	background-image: url("/web/20140322235839im_/http://www.primagames.com/media/files/halo-4-eguide/bg-heading1.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: bottom !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	padding-right: 170px !important;
+	padding-left: 0 !important;
+	padding-bottom: 3px;
+	clear: both;
+}
+
+.eguide-halo-4-eguide h2 {
+	background-image: url("/web/20140322235839im_/http://www.primagames.com/media/files/halo-4-eguide/bg-heading2.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0px 1px !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 10px;
+	color: #7bbcd8;
+	padding-right: 220px !important;
+	clear: both;
+}
+
+.eguide-halo-4-eguide h2 em {
+	color: #7bbcd8;
+}
+
+.eguide-halo-4-eguide h3 {
+	font-size: 16px;
+	font-weight: bold;
+	background: none;
+	margin: 0;
+	padding: 0;
+	text-transform: none;
+	clear: both;
+}
+
+.eguide-halo-4-eguide h4 {
+	background: none;
+	line-height: 26px;
+	background-image: url("/web/20140322235839im_/http://www.primagames.com/media/files/halo-4-eguide/bg-heading4.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0px 1px !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 24px;
+	padding-top: 2px;
+	color: #000000;
+	clear: both;
+	height: auto;
+	margin: 0;
+}
+
+.eguide-halo-4-eguide .recommendedloadoutheader {
+	background: none;
+	line-height: 31px;
+	background-image: url("/web/20140322235839im_/http://www.primagames.com/media/files/halo-4-eguide/bg-heading5.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0px 1px !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 27px;
+	padding-top: 1px;
+	color: #faa61a;
+	clear: both;
+	height: auto;
+	margin: 0;
+}
+.eguide-halo-4-eguide .recommendedloadout {
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.eguide-halo-4-eguide .recommendedloadout * {
+	color: #000000;
+}
+
+.eguide-halo-4-eguide ul li, .eguide-halo-4-eguide ol li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px; !important;
+	letter-spacing: normal;
+}
+
+.eguide-halo-4-eguide .sidebar2title {
+	background: none;
+	background-color: #deedf5;
+	line-height: 16px;
+	background-image: url("/web/20140322235839im_/http://www.primagames.com/media/files/halo-4-eguide/bg-callout1.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0px 1px !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	color: #7cbcd8;
+	clear: both;
+	height: auto;
+	margin: 10px 0 0 0;
+}
+
+.eguide-halo-4-eguide .sidebar2header {
+	background: none;
+	background-color: #deedf5;
+	line-height: 16px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-top: 2px;
+	clear: both;
+	height: auto;
+	margin: 0;
+}
+
+.eguide-halo-4-eguide .sidebar2header, .eguide-halo-4-eguide .sidebar2header strong {
+	color: #000000;
+}
+
+.eguide-halo-4-eguide .sidebar2icon {
+	background-color: #deedf5;
+	max-width: 50%;
+}
+
+.eguide-halo-4-eguide .sidebar2item {
+	color: #000000;
+	background-color: #deedf5;
+	margin: 0;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+}
+
+.eguide-halo-4-eguide .sidebar1title {
+	background: none;
+	background-color: #ecf2cb;
+	line-height: 16px;
+	background-image: url("/web/20140322235839im_/http://www.primagames.com/media/files/halo-4-eguide/bg-callout2.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0px 1px !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	color: #9ca95f;
+	clear: both;
+	height: auto;
+	margin: 0;
+}
+
+.eguide-halo-4-eguide .sidebar1header {
+	background: none;
+	background-color: #ecf2cb;
+	line-height: 16px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 5px;
+	padding-top: 2px;
+	color: #000000;
+	clear: both;
+	height: auto;
+	margin: 0;
+}
+
+.eguide-halo-4-eguide .sidebar1header, .eguide-halo-4-eguide .sidebar1header strong {
+	color: #000000;
+}
+
+.eguide-halo-4-eguide .sidebar1icon {
+	background-color: #ecf2cb;
+	max-width: 50%;
+}
+
+.eguide-halo-4-eguide .sidebar1item {
+	color: #000000;
+	background-color: #ecf2cb;
+	margin: 0;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+}
+
+.eguide-halo-4-eguide .infinity-armor-image {
+	float: left;
+}
+
+.Eguide-Imported-Guide h3, .Eguide-WWE-13-eGuide h3 {
+	clear: both;
+}
+
+.eguide-simcity-eguide .dev-tip {
+	background: #CCC;
+	color: #000;
+	padding: 10px;
+}
+
+.eguide-simcity-eguide h3.dev-tip-title  {
+	color: #FFF;
+	background: #C60;
+	padding: 10px 10px 0 10px;
+	margin: 0;
+}
+
+.eguide-simcity-eguide h4.dev-tip-title {
+	color: #FFF;
+	background: #C60;
+	margin: 0 0 0 0;
+	padding: 0px 10px 10px 10px;
+}
+
+.eguide-simcity-eguide .dev-tip p, .eguide-simcity-eguide .dev-tip em {
+	color: #000;
+}
+
+.eguide-simcity-eguide .points-to-remember {
+	background: #CCC;
+	color: #000;
+	padding: 10px;
+}
+
+.eguide-simcity-eguide .points-to-remember h3 {
+	color: #690;
+	margin: 0;
+}
+
+.eguide-simcity-eguide .points-to-remember li {
+	color: #000;
+}
+
+#site-type-header {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	padding: 5px;
+	font-weight: bold
+}
+
+#site-type-header.dev-site {
+	background-color:  #F00;
+	color: #FFF;
+}
+
+#site-type-header.test-site {
+	background-color: #FC0;
+	color: #000;
+}
+
+#site-type-header.staging-site {
+	background-color: #3C0;
+	color: #000;
+}
+
+#site-message-container {
+    color: #000;
+    background-color: #FDEFC6;
+	display: none;
+}
+
+#site-message {
+    color: #000;
+	margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;    
+	width: 980px;
+}
+
+#site-message a:link, #site-message a:visited {
+    color: #369;
+    font-weight: bold;
+}
+
+#site-message-close-icon {
+	background-image:url(/web/20140322235839im_/http://www.primagames.com/media/images/fancybox_sprite.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	float: right;
+}
+
+#page-prima-edge-rewards {
+    background: url(/web/20140322235839im_/http://www.primagames.com/media/files/prima_edge_rewards_land/prima_edge_rewards_v3.jpg);
+    background-repeat: no-repeat;
+}
+#page-prima-edge-rewards * {
+    color: #000000;
+}
+
+.eguide-lego-city-undercover-eguide .sidebar1, .eguide-lego-city-undercover-eguide .sidebar2 {
+    padding: 10px;
+}
+
+.eguide-lego-city-undercover-eguide .sidebar1 {
+    background-color: #FC3;
+}
+
+.eguide-lego-city-undercover-eguide .sidebar1 * {
+    color: #000;
+}
+
+.eguide-lego-city-undercover-eguide .sidebar1 .enlarge a {
+    color: #FFF;
+}
+
+.eguide-lego-city-undercover-eguide .sidebar2 {
+    background-color: #390;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1, .eguide-luigis-mansion-dark-moon-eguide .sidebar2 {
+    padding: 10px;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1 {
+    background-color: #000;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1 * {
+    color: #FFF;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1 h4 {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1 h4 img {
+    vertical-align: middle;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1 p {
+    line-height: normal;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar1 .enlarge a, .eguide-luigis-mansion-dark-moon-eguide .sidebar2 .enlarge a {
+    color: #FFF;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar2 {
+    background-color: #E8EABB;
+}
+
+.eguide-luigis-mansion-dark-moon-eguide .sidebar2 * {
+    color: #000;
+}
+
+.highlight {
+    color: #000000;
+    background-color: #FF0000;
+}
+
+.eguide-star-trek-eguide .sidebar1 {
+    background-color: #B9DCED;
+    padding: 10px;
+}
+
+.eguide-star-trek-eguide .sidebar1 p, .eguide-star-trek-eguide .sidebar1 h4 {
+	color: #4088ab;
+}
+
+.eguide-elder-scrolls-skyrim-legendary-eguide ul.float-three-column li {
+	float: left;
+	width: 30%;
+	display: inline;
+}
+
+.caption, .guide_content .caption {
+	font-style: italic;
+}
+
+/* Skyrim Legendary */
+.guide-id-643 .sidebar1, .guide-id-643 .sidebar2 {
+    padding: 10px;
+}
+
+.guide-id-643 .sidebar1 .twocol_imageleft
+, .guide-id-643 .sidebar1 .twocol_imageright
+, .guide-id-643 .sidebar2 .twocol_imageleft
+, .guide-id-643 .sidebar2 .twocol_imageright
+{
+    width: 319px;
+}
+
+.guide-id-643 .sidebar1 {
+    background-color: #000;
+}
+
+.guide-id-643 .sidebar1 p, .guide-id-643 .sidebar1 h3, .guide-id-643 .sidebar1 li {
+    color: #FFF;
+}
+
+.guide-id-643 .sidebar1 .enlarge a {
+    color: #FFF;
+}
+
+.guide-id-643 .sidebar2 {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    color: #000;
+}
+
+/* Lego Chima CSS (MediaClash) */
+div.message {
+	position: relative;
+}
+ 
+/* resize images to take padding on message box into consideration */
+div.message .twocol_imageleft {
+	width: 307px;
+}
+ 
+div.message .twocol_imageright {
+	width: 307px;
+}
+
+div.message .twocol_imageleft img{
+	margin-left:0px !important;
+}
+
+div.message .twocol_imageright img{
+	margin-left:0px !important;
+}
+ 
+ 
+/* This will sit the icon in the top right of the message box -*/
+.messageIcon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+div.message:before {
+	content:" ";
+	float:right;
+	width:75px;
+	height:75px;
+}
+/*
+     FILE ARCHIVED ON 23:58:39 Mar 22, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:09:12 Dec 14, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.909
+  exclusion.robots: 0.041
+  exclusion.robots.policy: 0.019
+  esindex: 0.02
+  cdx.remote: 7.977
+  LoadShardBlock: 83.831 (3)
+  PetaboxLoader3.datanode: 197.931 (5)
+  load_resource: 365.239 (2)
+  PetaboxLoader3.resolve: 241.193 (2)
+*/

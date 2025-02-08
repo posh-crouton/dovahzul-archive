@@ -1,0 +1,22 @@
+<esi:comment text="----------------MASTER ----------------"/>
+
+<esi:comment text="----------------ESI LOGIC----------------"/>
+
+<esi:choose>
+	<esi:when test="$(QUERY_STRING{app})=='all'">
+		
+		<esi:try>
+			<esi:attempt>
+				$(QUERY_STRING{cb})({<esi:include src="../api/esi-all.php?publisher=$(QUERY_STRING{publisher})&domain=$(QUERY_STRING{domain})&cnsMF=$(QUERY_STRING{cnsMF})&snapsetsMF=$(QUERY_STRING{snapsetsMF})&migrationMF=$(QUERY_STRING{migrationMF})&mobileWidgetMF=$(QUERY_STRING{mobileWidgetMF})" maxwait="1000" ttl="1d"/>});
+				<esi:vars>$add_header( 'Content-Type', 'text/javascript' )</esi:vars>
+			</esi:attempt>
+			<esi:except>
+				$(QUERY_STRING{cb})({cns:{doNotHash:false,hashAddressBar:false,doNotCopy:false},				snapsets:{snapsets:false},migration:{version:false},mobileWidget:{mobileWidget:false}});
+				<esi:vars>$add_header( 'Content-Type', 'text/javascript' )</esi:vars>
+			</esi:except>
+		</esi:try>
+		
+	</esi:when>
+</esi:choose>
+
+<esi:comment text="----------------ESI LOGIC (END)----------------"/>
